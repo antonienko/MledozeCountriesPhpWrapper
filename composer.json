@@ -1,0 +1,27 @@
+{
+  "name": "antonienko/mledoze-countries-phpwrapper",
+  "type": "library",
+  "description": "Php Wrapper for the json data from mledoze/countries library",
+  "keywords": ["countries"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Antonio Manuel Hernández Sánchez"
+    }
+  ],
+  "autoload": {
+    "psr-0": {
+      "antonienko\\MledozeCountriesPhpWrapper": "lib/"
+    }
+  },
+  "autoload-dev": {
+    "psr-0": { "antonienko\\tests\\": "tests/" }
+  },
+  "require": {
+    "php": ">=5.4",
+    "mledoze/countries": "~1.7"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0"
+  }
+}
