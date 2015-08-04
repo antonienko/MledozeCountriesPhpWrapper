@@ -4,9 +4,9 @@ namespace antonienko\MledozeCountriesPhpWrapper;
 class CountriesWrapper
 {
     private $jsonData;
-    public function __construct($jsonToLoad = null)
+    public function __construct($jsonToLoad)
     {
-        $this->jsonData = json_decode($jsonToLoad ? $jsonToLoad : file_get_contents(__DIR__.'/../../../vendor/mledoze/countries/dist/countries.json'));
+        $this->jsonData = json_decode($jsonToLoad);
     }
 
     public function countryList()
